@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Mong | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 10%;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+.btn{
+    margin-top:25px;
+    display:inline-block;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Charles.</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <!-- Replace profile.jpg with your image -->
+    <img src="05df0287-6488-4cfe-912e-b5d87d064a0d.jpg"
+
+    <h1>Hello, I'm <span>Amado Charles Mong</span></h1>
+
+    <p>
+        A Bachelor of Science in Information Technology student who is passionate
+        about web development, programming, technology, and creating innovative
+        digital solutions.
+    </p>
+
+    <a href="#about" class="btn">Explore More</a>
+
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about-content">
+        <p>
+            I am a BSIT student from Davao del Norte State College.
+            I enjoy learning different technologies and improving my skills
+            in programming, web development, and software development.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to become a skilled IT professional capable of
+            building useful applications and websites that can help people
+            solve real-world problems.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">Communication</div>
+        <div class="skill-box">Teamwork</div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <br>
+            <p>
+                A responsive website showcasing my profile,
+                skills, and achievements.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Information System</h3>
+            <br>
+            <p>
+                A Java-based system that manages student records
+                and information.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Retail Order Processing System</h3>
+            <br>
+            <p>
+                A system that handles product orders,
+                payment processing, and deliveries.
+            </p>
+        </div>
+        
+        <div class="project-card">
+            <h3>Hospital Billing System</h3>
+            <br>
+            <p>
+                A system that handles billing in a specific
+                hospital.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p>Email: charlesmong1204@gmail.com</p>
+        <p>Phone: 09934164476</p>
+        <p>Sto. Tomas, Davao del Norte, Philippines</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Amado Charles Mong | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
